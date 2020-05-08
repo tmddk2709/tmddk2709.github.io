@@ -253,7 +253,6 @@ nav {
 	
 	float: left;
 	width: 200px;
-	hight: 
 	backgroud-color: $lightGray;
 
   @include mobile {
@@ -263,6 +262,7 @@ nav {
 
 .main-layout .posts {
 	float: left;
+	width: 950px;
 }
 	
 	
