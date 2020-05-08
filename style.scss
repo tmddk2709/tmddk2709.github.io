@@ -253,6 +253,7 @@ nav {
 	
 	float: left;
 	width: 200px;
+	hight: 
 	backgroud-color: $lightGray;
 
   @include mobile {
@@ -267,12 +268,12 @@ nav {
 	
 	
 	
-.posts > .post {
+.main-layout .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post:last-child {
+.main-layout .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
