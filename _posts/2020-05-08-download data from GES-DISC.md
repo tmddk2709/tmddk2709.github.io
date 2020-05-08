@@ -67,8 +67,8 @@ wget --load-cookies ~/.urs_cookies --save-cookies ~/.urs_cookies --auth-no-chall
 - `<url>` is the link that points to a file you wish to download or to an OPeNDAP resource.
 - Your Earthdata password might be requested on the first download
 - If you wish to download an entire directory, such as this example URL, use the following command:
-
-```wget --load-cookies ~/.urs_cookies --save-cookies ~/.urs_cookies --auth-no-challenge=on --keep-session-cookies -np -r --content-disposition <url>
+```
+wget --load-cookies ~/.urs_cookies --save-cookies ~/.urs_cookies --auth-no-challenge=on --keep-session-cookies -np -r --content-disposition <url>
 ```
 
 To download multiple data files at once, create a plain-text `<url.txt>` file with each line containing a GES DISC data file URL. Then, enter the following command:
