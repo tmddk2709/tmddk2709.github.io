@@ -30,22 +30,6 @@ body {
   width: 100%;
 }
 
-.category {
-	font-family: $helveticaNeue;
-	font-size: 30px;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-	
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -257,6 +241,32 @@ nav {
 // .main
 //
 
+.main-layout .category {
+	font-family: $helveticaNeue;
+	font-size: 30px;
+  color: $darkerGray;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+	
+	float: left;
+	width: 200px;
+	backgroud-color: $lightGray;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+.main-layout .posts {
+	float: left;
+	width: 1000px;
+}
+	
+	
+	
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
