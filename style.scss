@@ -241,11 +241,15 @@ nav {
 // .main
 //
 
-.main-layout {
+.main-layout:after{
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $white;
+	
+	clear: both;
+	display: block;
+	content: '';
 }
 
 .main-layout .category {
