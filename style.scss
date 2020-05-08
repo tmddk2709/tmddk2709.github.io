@@ -241,11 +241,7 @@ nav {
 // .main
 //
 
-.main-layout {
-	width: 1200px;
-}
-
-.main-layout .category {
+.container .category {
 	font-family: $helveticaNeue;
 	font-size: 30px;
   color: $darkerGray;
@@ -264,7 +260,7 @@ nav {
   }
 }
 
-.main-layout .posts {
+.container .posts {
 	float: left;
 	width: 1000px;
 }
