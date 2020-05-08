@@ -17,10 +17,10 @@ Download your data using wget:
 
 - Next, enter "cmd" in the text field and click "OK"
 
-- Navigate to the directory you wish to create the cookies file in. In this guide, we place it under the C drive, but any directory will do. You can navigate to the C drive by entering C:
+- Navigate to the directory you wish to create the cookies file in. In this guide, we place it under the C drive, but any directory will do. You can navigate to the C drive by entering `C:`
 
-- Finally, enter NUL > .urs_cookies.
-  - Note: you may need to re-create .urs_cookies in case you have already executed wget without valid authentication.
+- Finally, enter `NUL > .urs_cookies`
+  - Note: you may need to re-create .urs_cookies in case you have already executed `wget` without valid authentication.
   - Note: you can get 'Access denied' error. Enter 'dir' to verify that '.urs_cookies' file is listed in your directory.
 
 4) Download your data using wget:
@@ -29,7 +29,7 @@ Download your data using wget:
 wget --load-cookies C:\.urs_cookies --save-cookies C:\.urs_cookies --auth-no-challenge=on --keep-session-cookies --user=<your username> --ask-password --content-disposition <url>
 `
 
-- `--auth-no-challenge` may not be needed depending on your version of wget
+- `--auth-no-challenge` may not be needed depending on your version of `wget`
 
 - `<your username>` is the username belonging to your Earthdata account
 
@@ -62,7 +62,7 @@ wget --load-cookies C:\.urs_cookies --save-cookies C:\.urs_cookies --auth-no-cha
   
 - `chmod 0600 .netrc` (so only you can access it)
 
-4) Create a cookie file. This file will be used to persist sessions across calls to wget or curl.
+4) Create a cookie file. This file will be used to persist sessions across calls to `wget` or `curl`.
 - `cd ~` or `cd $HOME`
 
 - `touch .urs_cookies`
@@ -73,7 +73,7 @@ wget --load-cookies C:\.urs_cookies --save-cookies C:\.urs_cookies --auth-no-cha
 wget --load-cookies ~/.urs_cookies --save-cookies ~/.urs_cookies --auth-no-challenge=on --keep-session-cookies --content-disposition <url>
 ```
 
-- `--auth-no-challenge` may not be needed depending on your version of wget
+- `--auth-no-challenge` may not be needed depending on your version of `wget`
 
 - `<url>` is the link that points to a file you wish to download or to an OPeNDAP resource.
 
