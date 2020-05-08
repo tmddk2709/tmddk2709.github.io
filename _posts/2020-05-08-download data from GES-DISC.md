@@ -1,3 +1,9 @@
+---
+layout: post
+title: Download data from GES-DISC
+categories: ACMG
+---
+
 Download your data using wget:
 wget --load-cookies C:\.urs_cookies --save-cookies C:\.urs_cookies --auth-no-challenge=on --keep-session-cookies --user=<your username> --ask-password --content-disposition <url>
 
