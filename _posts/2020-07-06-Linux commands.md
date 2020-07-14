@@ -6,7 +6,7 @@ categories: Linux
 
 Linux commands
 
-# chmod
+## chmod
 
 권한 부여하기
 
@@ -50,7 +50,7 @@ chmod 4755 test : test파일의 user id설정을 지정하고, user에게 rwx �
 ```
 
 
-# 파일 비교하기
+## 파일 비교하기
 
 ```
 diff file1 file2
@@ -65,18 +65,36 @@ comm fil1 file2 #두 파일에서 공통적인 부분과 한쪽에만 있는 부
 ```
 
 
-# find
+## find
 
 파일 찾기
 
-```'
+```
 find . -name [FILE] -type f
 find . -name "*str*" -type d
 find / -maxdepth 1 -name "sys" #sys라는 파일을 root 디렉터리에서만 검색
 ```
 
 
-# 텍스트 처리
+## grep
+
+파일에서 검색하기
+
+```
+grep "STR" [FILE]	#대상 파일에서 문자열 검색
+grep "STR" *		#현재 디렉터리 모든 파일에서 문자열 검색
+grep "STR" *.ext	#특정 확장자를 가진 모든 파일에서 문자열 검색
+
+grep -i "STR" [FILE]	#대소문자 구분하지 않고 문자열 검색
+grep -v "STR" [FILE]	#매칭되는 패턴이 존재하지 않는 라인 검색
+grep -w "STR" [FILE]	#단어 단위로 문자열 검색
+grep -n "STR" [FILE]	#검색된 문자열이 포함된 라인 번호 출력
+grep -r "STR" [FILE]	#하위 디렉터리를 포함한 모든 파일에서 문자열 검색
+grep -H "STR" *		#검색 결과 앞에 파일 이름 표시
+```
+
+
+## 텍스트 처리
 
 ```
 cat books.csv						#매개변수로 전달된 파일 출력
