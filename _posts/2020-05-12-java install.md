@@ -1,6 +1,6 @@
 ---
 layout: post
-title: java installation
+title: Java installation
 categories: Java
 ---
 
