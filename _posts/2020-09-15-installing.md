@@ -6,7 +6,7 @@ categories: Python
 
 리눅스 서버에 모듈 설치하기
 
-###Cartopy
+### Cartopy
 
     conda install -c conda-forge cartopy
   
