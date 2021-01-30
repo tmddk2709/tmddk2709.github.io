@@ -21,6 +21,7 @@ categories: Machine Learning
     
     # tensorflow는 python=3.7에서!
     conda install tensorflow
+    conda install tensorflow==1.15
     pip install gym
 
     # jupyter lab
