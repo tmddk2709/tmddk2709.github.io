@@ -4,6 +4,7 @@ title: Tensorflow
 categories: Machine Learning
 ---
 
+
 **Eager execution**
 
 그래프를 생성하지 않고 함수를 바로 실행하는 명령형 프로그래밍 환경
