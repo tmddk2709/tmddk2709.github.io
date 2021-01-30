@@ -30,6 +30,6 @@ categories: Machine Learning
 	# 입력 텐서 x에 대한 z의 도함수
 	dz_dx = t.gradient(z,x)
 	for i in [0,1]:
-		for j in [0,1]:
-			assert dz_dx[i][j].numpy() == 8.0
+	    for j in [0,1]:
+	        assert dz_dx[i][j].numpy() == 8.0
 
