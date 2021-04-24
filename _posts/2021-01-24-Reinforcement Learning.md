@@ -25,5 +25,6 @@ categories: Machine Learning
     pip install gym
 
     # jupyter lab
+    # 가상환경 접속 상태에서
     conda install ipykernel
     python -m ipykernel install --user --name "가상환경이름" [--display-name="<jupyterlab에서 보이고 싶은 커널 이름>"]
